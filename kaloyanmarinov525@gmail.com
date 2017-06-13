@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Project</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/KaloyanMarinov525/softuniproject/gh-pages/styles.css">
 </head>
 <body>
 	<nav>
