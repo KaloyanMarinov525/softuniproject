@@ -2,6 +2,8 @@
 
 * { margin: 0; padding: 0; }
 
+nav { transition: background-color 150ms ease; }
+
 body { font-size: 24px; font-family: 'Oxygen', serif, sans-serif; background-color: #333333; }
 
 ul { text-align: center; margin: 0 auto; }
@@ -10,7 +12,7 @@ li { display: inline-block; list-style-type: none; text-align: center; padding: 
 
 a { text-decoration: none;  color: #ffffff; }
 
-li:hover { border-bottom: 5px solid #009b9c; border-top: 5px solid #bb4900; padding: 15px 30px; }
+li:hover { border-bottom: 5px solid #009b9c; border-top: 5px solid transparent; padding: 15px 30px; }
 
 a:hover { color: #cccccc; }
 
