@@ -2,12 +2,14 @@
 
 body { background-color: #333333; font-size: 24px; }
 
-nav { background-color: #bb4900; }
+ul { text-align: center; margin: 0 auto; }
 
-ul { text-align: center; }
-
-li { display: inline-block; list-style-type: none; text-align: center; padding: 10px 20px; }
+li { display: inline-block; list-style-type: none; text-align: center; padding: 20px 30px; }
 
 a { text-decoration: none;  color: #ffffff; }
 
-a:hover { color: #00ff00; }
+li:hover { border-bottom: 5px solid #009b9c; border-top: 5px solid #bb4900; padding: 15px 30px; }
+
+a:hover { color: #cccccc; }
+
+nav:hover { background-color: #bb4900; }
