@@ -76,8 +76,9 @@ input[type="checkbox"]:checked ~ label .bottom {
 
 .logo {
   margin-top: 25px;
-  transition: all 0.5s ease;
-  animation: fadeInUp 2s ease 200ms;
+  margin-bottom: 25px;
+  transition: all 1s ease;
+  animation: fadeInUp 3s ease 0s;
   animation-iteration-count: 1;
 }
 
