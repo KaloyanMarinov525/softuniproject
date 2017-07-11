@@ -1,22 +1,21 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-#wrapper {
-	width: 100vw;
-	height: 100vh;
-  background-color:rgba(173,216,230,1);
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
+/*#wrapper {
+  
+}*/
+
+.page-wrap {
+  background: rgba(0,0,0,0);
+  transition: all .3s ease-in-out;
 }
 
-.menu {
+.header {
+  z-index: 0;
   position: relative;
-  display: block;
-  width: 100%;
-  height: 80px;
-  background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(78,136,193,1) 50%,rgba(125,185,232,0) 100%);
-  background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(78,136,193,1) 50%, rgba(125,185,232,0) 100%);
-  background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(78,136,193,1) 50%,rgba(125,185,232,0) 100%);
+  height: 100vh;
+  background-color:rgba(173,216,230,1);
+  box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  overflow: hidden;
 }
 
 input[type="checkbox"] {
@@ -24,26 +23,27 @@ input[type="checkbox"] {
 }
 
 label {
+  position: fixed;
+  z-index: 20;
   margin: 10px;
   padding: 20px 20px;
-  position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
 .bar {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   height: 5px;
-  width: 100%;
+  width: 95%;
   border-radius: 5px;
   margin: auto;
 	background-color: white;
   border: 1px solid black;
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .top {
@@ -68,8 +68,56 @@ input[type="checkbox"]:checked ~ label .bottom {
   transform: rotateZ(-45deg);
 }
 
+input[type="checkbox"]:checked ~ .page-wrap {
+  background: rgba(0,0,0,0.7);
+}
+
+input[type="checkbox"]:checked ~ .page-wrap .header {
+  z-index: -1;
+}
+
+input[type="checkbox"]:checked ~ aside {
+  transform: translateX(100%);
+}
+
+aside {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: -15%;
+  width: 15%;
+  height: 100%;
+  background-color: rgba(30,87,153,0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+aside > ul {
+  margin-top: 100px;
+}
+
+aside > ul > li {
+  border-bottom: 1px solid white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+aside > ul > li > a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+aside > ul > li:hover{
+  cursor: pointer;
+  background-color: rgba(78,136,193,1);
+}
+
 .logo-container {
-  display: block;
   display: flex;
   justify-content: center;
 }
@@ -77,9 +125,10 @@ input[type="checkbox"]:checked ~ label .bottom {
 .logo {
   margin-top: 25px;
   margin-bottom: 25px;
-  transition: all 1s ease;
-  animation: fadeInUp 3s ease 0s;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease 0s;
   animation-iteration-count: 1;
+  z-index: 50;
 }
 
 .logo:hover {
@@ -98,113 +147,14 @@ input[type="checkbox"]:checked ~ label .bottom {
   }
 }
 
-.cloud-div-1 {
-  position: absolute;
-  top: 70px;
-  z-index: 0;
-  animation: cloudNine infinite 55s linear;
+/* Content */
+
+/*.content {
+  border: 10px solid black;
+  margin: 5px;
 }
 
-@keyframes cloudNine {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.cloud-1 {
-  width: 100%;
-}
-
-.cloud-div-2 {
-  position: absolute;
-  top: 230px;
-  z-index: -1;
-  animation: cloudNine infinite 40s linear;
-}
-
-@keyframes cloudNine {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.cloud-2 {
-  width: 100%;
-}
-
-.cloud-div-3 {
-  position: absolute;
-  top: 90px;
-  z-index: -1;
-  animation: cloudTen infinite 30s linear;
-}
-
-@keyframes cloudTen {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(160%);
-  }
-}
-
-.cloud-3 {
-  width: 100%;
-}
-
-.cloud-div-4 {
-  position: absolute;
-  top: 400px;
-  z-index: -1;
-  animation: cloudEleven infinite 100s linear;
-}
-
-@keyframes cloudEleven {
-  0% {
-    transform: translateX(160%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.cloud-4 {
-  width: 100%;
-}
-
-.cloud-div-5 {
-  position: absolute;
-  top: -20px;
-  z-index: -1;
-  animation: cloudTwelve infinite 120s linear;
-}
-
-@keyframes cloudTwelve {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-
-  1% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
-}
-
-.cloud-5 {
-  width: 100%;
-}
+.content > p {
+  margin: 100px 500px;
+  text-align: justify;
+}*/
