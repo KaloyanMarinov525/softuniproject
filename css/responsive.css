@@ -1,0 +1,45 @@
+@media all and (max-width: 1600px) {
+	aside {
+		left: -20%;
+		width: 20%;
+	}
+}
+
+@media all and (max-width: 1024px) {
+	aside {
+		left: -30%;
+		width: 30%;
+	}
+}
+
+@media all and (max-width: 960px) {
+	aside {
+		left: -32%;
+		width: 32%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	aside {
+		left: -35%;
+		width: 35%;
+	}
+}
+
+@media all and (max-width: 640px) {
+	aside {
+		left: -38%;
+		width: 38%;
+	}
+}
+
+@media all and (max-width: 480px) {
+		aside {
+		left: -100%;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 320px) {
+	
+}
