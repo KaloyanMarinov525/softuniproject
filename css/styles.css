@@ -251,6 +251,8 @@ footer > .social-footer {
 footer > .social-footer > a {
   color: #fff;
   font-size: 38px;
+  padding: 0 20px;
+  z-index: -1;
 }
 
 footer > .social-footer > a > i {
