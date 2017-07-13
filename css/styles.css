@@ -183,13 +183,13 @@ aside > ul > li:hover{
 
 @keyframes fly {
   0% {
-    transform: rotateZ(90deg) translateX(-500%);
+    transform: translateX(-500%) rotateZ(90deg);
   }
   50% {
-    transform: rotateZ(90deg) translateX(0%);
+    transform: translateX(0%) rotateZ(90deg);
   }
   100% {
-    transform: rotateZ(90deg) translateX(700%);
+    transform: translateX(700%) rotateZ(90deg);
   }
 }
 
@@ -207,10 +207,10 @@ aside > ul > li:hover{
 
 @keyframes fire {
   0% {
-    transform: rotateZ(90deg) translateX(-600%);
+    transform: translateX(-600%) rotateZ(90deg);
   }
   100% {
-    transform: rotateZ(90deg) translateX(600%);
+    transform: translateX(600%) rotateZ(90deg);
   }
 }
 
