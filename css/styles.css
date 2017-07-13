@@ -16,7 +16,7 @@ body {
 
 .page-wrap {
   background: rgba(0,0,0,0);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header {
@@ -148,6 +148,9 @@ aside > ul > li:hover{
 .logo {
   animation: fadeInUp 1s ease 0s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
   transition: all 0.3s ease;
   z-index: 50;
 }
@@ -183,7 +186,9 @@ aside > ul > li:hover{
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  height: 700px; 
+  animation-delay: 0.8s;
+  height: 700px;
+  opacity: 0;
   transform: rotateZ(90deg);
   width: 300px;
   z-index: 50;
@@ -191,12 +196,19 @@ aside > ul > li:hover{
 
 @keyframes fly {
   0% {
+    opacity: 0;
+    transform: translateX(-500%) rotateZ(90deg);
+  }
+  1% {
+    opacity: 1;
     transform: translateX(-500%) rotateZ(90deg);
   }
   50% {
+    opacity: 1;
     transform: translateX(0%) rotateZ(90deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(700%) rotateZ(90deg);
   }
 }
@@ -207,7 +219,9 @@ aside > ul > li:hover{
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
+  animation-delay: 0.8s;
   height: 700px;
+  opacity: 0;
   transform: rotateZ(90deg);
   width: 300px;
   z-index: 50;
@@ -215,9 +229,15 @@ aside > ul > li:hover{
 
 @keyframes fire {
   0% {
+    opacity: 0;
+    transform: translateX(-600%) rotateZ(90deg);
+  }
+  1% {
+    opacity: 1;
     transform: translateX(-600%) rotateZ(90deg);
   }
   100% {
+    opacity: 1;
     transform: translateX(600%) rotateZ(90deg);
   }
 }
@@ -255,6 +275,11 @@ aside > ul > li:hover{
 .video {
   margin: 10px auto;
   z-index: -1;
+}
+
+iframe {
+  height: 315px;
+  width: 560px;
 }
 
 /******************************* Footer *******************************/

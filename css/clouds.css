@@ -1,23 +1,29 @@
 .cloud-container {
-  z-index: 30;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  z-index: 30;
 }
 
 .cloud-div-1 {
-  z-index: 30;
+  animation: cloudNine infinite 55s linear;
+  animation-delay: 1s;
+  opacity: 0;
   position: absolute;
   top: 70px;
-  animation: cloudNine infinite 55s linear;
+  z-index: 30;
 }
 
 @keyframes cloudNine {
   0% {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-110%);
   }
-
+  1% {
+    opacity: 1;
+  }
   100% {
-    transform: translateX(100%);
+    opacity: 1;
+    transform: translateX(110%);
   }
 }
 
@@ -26,19 +32,25 @@
 }
 
 .cloud-div-2 {
-  z-index: 30;
+  animation: cloudNine infinite 40s linear;
+  animation-delay: 1s;
+  opacity: 0;
   position: absolute;
   top: 230px;
-  animation: cloudNine infinite 40s linear;
+  z-index: 30;
 }
 
 @keyframes cloudNine {
   0% {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-110%);
   }
-
+  1% {
+    opacity: 1;
+  }
   100% {
-    transform: translateX(100%);
+    opacity: 1;
+    transform: translateX(110%);
   }
 }
 
@@ -47,18 +59,24 @@
 }
 
 .cloud-div-3 {
-  z-index: 30;
+  animation: cloudTen infinite 30s linear;
+  animation-delay: 1s;
+  opacity: 0;
   position: absolute;
   top: 90px;
-  animation: cloudTen infinite 30s linear;
+  z-index: 30;
 }
 
 @keyframes cloudTen {
   0% {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-110%);
   }
-
+  1% {
+    opacity: 1;
+  }
   100% {
+    opacity: 1;
     transform: translateX(160%);
   }
 }
@@ -68,19 +86,25 @@
 }
 
 .cloud-div-4 {
-  z-index: 30;
+  animation: cloudEleven infinite 100s linear;
+  animation-delay: 1s;
+  opacity: 0;
   position: absolute;
   top: 400px;
-  animation: cloudEleven infinite 100s linear;
+  z-index: 30;
 }
 
 @keyframes cloudEleven {
   0% {
-    transform: translateX(160%);
+    opacity: 0;
+    transform: translateX(200%);
   }
-
+  1% {
+    opacity: 1;
+  }
   100% {
-    transform: translateX(-100%);
+    opacity: 1;
+    transform: translateX(-150%);
   }
 }
 
@@ -89,10 +113,12 @@
 }
 
 .cloud-div-5 {
-  z-index: 30;
+  animation: cloudTwelve infinite 120s linear;
+  animation-delay: 1s;
+  opacity: 0;
   position: absolute;
   top: -20px;
-  animation: cloudTwelve infinite 120s linear;
+  z-index: 30;
 }
 
 @keyframes cloudTwelve {
@@ -100,11 +126,9 @@
     opacity: 0;
     transform: translateX(100%);
   }
-
   1% {
     opacity: 1;
   }
-
   100% {
     opacity: 1;
     transform: translateX(-100%);
