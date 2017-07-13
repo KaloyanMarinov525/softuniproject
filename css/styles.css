@@ -240,9 +240,31 @@ footer {
   z-index: -1;
 }
 
-footer > p {
+footer > p,
+footer > .social-footer {
   width: 70%;
   margin: auto;
   padding: 20px 0;
   z-index: -1;
+}
+
+footer > .social-footer > a {
+  color: #fff;
+  font-size: 38px;
+}
+
+footer > .social-footer > a > i {
+  transition: color 0.5s ease;
+}
+
+footer > .social-footer > a:hover .fa-facebook-square {
+  color: #3B5998;
+}
+
+footer > .social-footer > a:hover .fa-twitter-square {
+  color: #1DA1F2;
+}
+
+footer > .social-footer > a:hover .fa-google-plus-square {
+  color: #DE5F54;
 }
