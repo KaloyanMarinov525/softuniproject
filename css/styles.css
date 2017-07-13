@@ -142,6 +142,7 @@ aside > ul > li:hover{
 }
 
 .logo-container a {
+  transition: all 0.3s ease;
   z-index: 51;
 }
 
@@ -151,11 +152,10 @@ aside > ul > li:hover{
   animation-fill-mode: forwards;
   animation-delay: 0.8s;
   opacity: 0;
-  transition: all 0.3s ease;
   z-index: 50;
 }
 
-.logo:hover {
+a:hover {
   transform: scale(1.05);
 }
 

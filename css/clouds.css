@@ -5,7 +5,7 @@
 }
 
 .cloud-div-1 {
-  animation: cloudNine infinite 55s linear;
+  animation: cloudOne infinite 55s linear;
   animation-delay: 1s;
   opacity: 0;
   position: absolute;
@@ -13,7 +13,7 @@
   z-index: 30;
 }
 
-@keyframes cloudNine {
+@keyframes cloudOne {
   0% {
     opacity: 0;
     transform: translateX(-110%);
@@ -23,7 +23,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(110%);
+    transform: translateX(175%);
   }
 }
 
@@ -32,15 +32,15 @@
 }
 
 .cloud-div-2 {
-  animation: cloudNine infinite 40s linear;
+  animation: cloudTwo infinite 40s linear;
   animation-delay: 1s;
   opacity: 0;
   position: absolute;
-  top: 230px;
+  top: 320px;
   z-index: 30;
 }
 
-@keyframes cloudNine {
+@keyframes cloudTwo {
   0% {
     opacity: 0;
     transform: translateX(-110%);
@@ -50,7 +50,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(110%);
+    transform: translateX(175%);
   }
 }
 
@@ -59,7 +59,7 @@
 }
 
 .cloud-div-3 {
-  animation: cloudTen infinite 30s linear;
+  animation: cloudThree infinite 20s linear;
   animation-delay: 1s;
   opacity: 0;
   position: absolute;
@@ -67,7 +67,7 @@
   z-index: 30;
 }
 
-@keyframes cloudTen {
+@keyframes cloudThree {
   0% {
     opacity: 0;
     transform: translateX(-110%);
@@ -77,7 +77,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(160%);
+    transform: translateX(210%);
   }
 }
 
@@ -86,7 +86,7 @@
 }
 
 .cloud-div-4 {
-  animation: cloudEleven infinite 100s linear;
+  animation: cloudFour infinite 100s linear;
   animation-delay: 1s;
   opacity: 0;
   position: absolute;
@@ -94,7 +94,7 @@
   z-index: 30;
 }
 
-@keyframes cloudEleven {
+@keyframes cloudFour {
   0% {
     opacity: 0;
     transform: translateX(200%);
@@ -113,7 +113,7 @@
 }
 
 .cloud-div-5 {
-  animation: cloudTwelve infinite 120s linear;
+  animation: cloudFive infinite 120s linear;
   animation-delay: 1s;
   opacity: 0;
   position: absolute;
@@ -121,10 +121,10 @@
   z-index: 30;
 }
 
-@keyframes cloudTwelve {
+@keyframes cloudFive {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(190%);
   }
   1% {
     opacity: 1;
