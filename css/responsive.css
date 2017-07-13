@@ -34,12 +34,30 @@
 }
 
 @media all and (max-width: 480px) {
-		aside {
+	.header {
+		height: inherit;
+	}
+
+	aside {
 		left: -100%;
 		width: 100%;
+	}
+
+	.logo-container {
+		margin-top: 30px;
+	}
+
+	.logo {
+		transform: scale(0.7);
+	}
+
+	.bankin-container img.fire,
+	.bankin-container img.rocket {
+		width: 150px;
+		height: 350px;
 	}
 }
 
 @media all and (max-width: 320px) {
-	
+
 }

@@ -25,6 +25,9 @@ body {
   height: 100vh;
   background-color:rgba(173,216,230,1);
   box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  -webkit-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  -moz-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  -o-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
   overflow: hidden;
 }
 
@@ -131,6 +134,7 @@ aside > ul > li:hover{
 .logo-container {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .logo-container a {
@@ -138,8 +142,6 @@ aside > ul > li:hover{
 }
 
 .logo {
-  margin-top: 25px;
-  margin-bottom: 25px;
   transition: all 0.3s ease;
   animation: fadeInUp 1s ease 0s;
   animation-iteration-count: 1;
@@ -235,10 +237,12 @@ footer {
   background-color: #234464;
   color: #fff;
   font-size: 18px;
+  z-index: -1;
 }
 
 footer > p {
   width: 70%;
   margin: auto;
   padding: 20px 0;
+  z-index: -1;
 }
