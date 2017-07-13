@@ -3,6 +3,14 @@
 		left: -20%;
 		width: 20%;
 	}
+
+	.content {
+		margin: 10px 200px;
+	}
+
+	.content > h1 {
+		font-size: 1.3em;
+	}
 }
 
 @media all and (max-width: 1024px) {
@@ -17,6 +25,10 @@
 		left: -32%;
 		width: 32%;
 	}
+
+	.content {
+		margin: 10px 170px;
+	}
 }
 
 @media all and (max-width: 768px) {
@@ -24,12 +36,19 @@
 		left: -35%;
 		width: 35%;
 	}
+
+	.content {
+		margin: 10px 110px;
+	}
 }
 
 @media all and (max-width: 640px) {
 	aside {
 		left: -38%;
 		width: 38%;
+	}
+	.content {
+		margin: 10px;
 	}
 }
 
