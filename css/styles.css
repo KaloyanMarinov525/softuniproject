@@ -132,6 +132,10 @@ aside > ul > li:hover{
 }
 
 .logo-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: center;
   margin-top: 70px;
@@ -165,6 +169,10 @@ aside > ul > li:hover{
 }
 
 .bankin-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
   justify-content: center;
 }
@@ -172,7 +180,7 @@ aside > ul > li:hover{
 .rocket {
   animation-name: fly;
   animation-timing-function: linear;
-  animation-duration: 20s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   height: 700px; 
@@ -196,7 +204,7 @@ aside > ul > li:hover{
 .fire {
   animation-name: fire;
   animation-timing-function: linear;
-  animation-duration: 20s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
   height: 700px;
@@ -228,6 +236,27 @@ aside > ul > li:hover{
   text-align: center;
 }
 
+/******************************* Funny Videos *******************************/
+
+.video-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 49px 50px;
+}
+
+.video-content:hover .video {
+  z-index: 1;
+}
+
+.video {
+  margin: 10px auto;
+  z-index: -1;
+}
+
 /******************************* Footer *******************************/
 
 footer {
@@ -243,16 +272,19 @@ footer > .social-footer {
   margin: auto;
   padding: 20px 0;
   width: 70%;
+  z-index: -1;
 }
 
 footer > .social-footer > a {
   color: #fff;
   font-size: 38px;
   padding: 0 20px;
+  z-index: -1;
 }
 
 footer > .social-footer > a > i {
   transition: color 0.5s ease;
+  z-index: -1;
 }
 
 footer > .social-footer > a:hover .fa-facebook-square {
