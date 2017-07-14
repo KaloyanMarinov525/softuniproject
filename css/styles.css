@@ -120,6 +120,7 @@ aside > ul > li {
 
 aside > ul > li > a {
   color: white;
+  display: inline-block;
   font-size: 1.5em;
   height: 100%;
   text-decoration: none;
@@ -245,7 +246,8 @@ a:hover {
 /******************************* Content *******************************/
 
 .content {
-  border: 10px solid black;
+  border: 10px solid #234464;
+  border-radius: 20px;
   margin: 10px 300px;
 }
 
