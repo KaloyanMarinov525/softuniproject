@@ -81,21 +81,12 @@ input[type="checkbox"]:checked ~ label .bottom {
   transform: rotateZ(-45deg);
 }
 
-input[type="checkbox"]:checked ~ .page-wrap {
-  background: rgba(0,0,0,0.7);
-}
-
-input[type="checkbox"]:checked ~ .page-wrap .header,
-input[type="checkbox"]:checked ~ .page-wrap footer {
-  z-index: -1;
-}
-
 input[type="checkbox"]:checked ~ aside {
   transform: translateX(100%);
 }
 
 aside {
-  background-color: rgba(30,87,153,0.5);
+  background-color: rgba(30,87,153,1);
   height: 100%;
   position: fixed;
   top: 0;
@@ -249,12 +240,30 @@ a:hover {
   border: 10px solid #234464;
   border-radius: 20px;
   margin: 10px 300px;
+  font-size: 34px;
 }
 
 .content > h1 {
-  margin: 50px;
-  font-size: 2em;
+  color: white;
   font-weight: bold;
+  margin: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 6px #000;
+}
+
+.content span {
+  display: block;
+  color: #234464;
+  font-size: 1.5em;
+  margin: 30px;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.content p {
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+  text-shadow: 0px 0px 6px #000;
   text-align: center;
 }
 
@@ -282,6 +291,79 @@ a:hover {
 iframe {
   height: 315px;
   width: 560px;
+}
+
+/******************************* Trainers *******************************/
+
+.trainers-content {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.trainer {
+  border: 10px solid #636363;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 3px 3px 1px 3px;
+  position: relative;
+  margin: 20px;
+  transition: border 0.3s ease;
+}
+
+.trainer:hover {
+  border: 10px solid #234464;
+}
+
+.trainers-content img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.trainers-content .card {
+  color: white;
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.trainers-content .info {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.trainers-content p {
+  font-size: 25px;
+}
+
+.trainers-content i {
+  display: block;
+  font-size: 50px;
+  text-align: center;
+}
+
+.trainers-content a {
+  color: white;
+  margin: 10px;
+}
+
+.effect .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.effect:hover .card {
+  opacity: 0.9;
 }
 
 /******************************* Footer *******************************/
@@ -325,5 +407,3 @@ footer > .social-footer > a:hover .fa-twitter-square {
 footer > .social-footer > a:hover .fa-google-plus-square {
   color: #DE5F54;
 }
-
-/*******************************  *******************************/

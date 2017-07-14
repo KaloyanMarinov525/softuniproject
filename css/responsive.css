@@ -7,10 +7,6 @@
 	.content {
 		margin: 10px 200px;
 	}
-
-	.content > h1 {
-		font-size: 1.3em;
-	}
 }
 
 @media all and (max-width: 1024px) {
@@ -45,6 +41,11 @@
 		height: 295px;
 		width: 540px;
 	}
+
+	.trainers-content {
+		flex-direction: column;
+		margin: 50px 112px;
+	}
 }
 
 @media all and (max-width: 640px) {
@@ -63,6 +64,9 @@
 	}
 	iframe {
 		width: 100%;
+	}
+	.trainers-content {
+		margin: 50px;
 	}
 }
 
@@ -93,8 +97,18 @@
 	.content > h1 {
 		margin: 50px 20px;
 	}
+	.trainers-content {
+		margin: 0px;
+	}
 }
 
 @media all and (max-width: 320px) {
-
+	.content h1,
+	.content p {
+		margin: 5px;
+	}
+	footer > p,
+	footer > .social-footer {
+		width: 90%;
+	}
 }
