@@ -16,20 +16,9 @@ body {
 
 .page-wrap {
   background: rgba(0,0,0,0);
-  transition: all 0.3s ease-in-out;
 }
 
-.header {
-  background-color:rgba(173,216,230,1);
-  box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
-  -webkit-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
-  -moz-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
-  -o-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-}
+/********************* Menu *********************/
 
 input[type="checkbox"] {
   display: none;
@@ -121,6 +110,20 @@ aside > ul > li > a {
 aside > ul > li:hover{
   background-color: rgba(78,136,193,1);
   cursor: pointer;
+}
+
+/******************** Header *********************/
+
+.header {
+  background-color:rgba(173,216,230,1);
+  box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  -webkit-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  -moz-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  -o-box-shadow: inset 0px 0px 300px -10px rgba(0,0,0,0.7);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
 .logo-container {
